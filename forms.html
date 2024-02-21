@@ -1,0 +1,118 @@
+<html>
+   <head>
+         <title>HTML Forms</title>
+         <style>
+            body{
+                background-color: coral;
+            }
+            li{
+                font-size: 25px;
+            }
+            .cs{
+                font-size: 35px;
+                color: blue;
+            }
+            #id{
+               color:greenyellow;
+               font-size: 50px; 
+               text-align: center;
+            }
+            #form{
+                font-style: italic;
+                font-size: 60px;
+                text-align: center;
+                color: slateblue;
+            }
+            #table-registration-form{
+                margin: auto;
+                border: 3px solid red;
+                padding: 10px;
+                background:white;
+
+            }
+            table-registration-form tr,td,input,select,textarea{
+                font-size: 15px;
+            }
+         </style>
+   </head>
+
+   <body>
+       <h1 id="form">Form Learning....!!!</h1>
+
+       <form action="register.jsp" method="post">
+
+       <table id="table-registration-form">
+        <tr>
+            <td>UserName:</td>
+            <td><input type="text" placeholder="enter username here" name="username"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" placeholder="enter password here" name="password"></td>
+        </tr>
+        <tr>
+            <td>DOB:</td>
+            <td><input type="date" name="DOB"></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="Gender">Male
+                <input type="radio" name="Gender">Female
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><textarea name="address" placeholder="enter address here" id="" cols="30" rows="10"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Course</td>         
+            <td>
+                <select name="course" id="" size="2" >
+                <option value="Java">Java coding</option>
+                <option value="Python">Python coding</option>
+                <option value="Ruby">Ruby coding</option>
+                <option value=".Net">.Net coding</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+                    <input type="checkbox">
+                </td>
+                <td>Accept terms and Conditions</td>
+
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <input type="Submit">
+                    <input type="Reset">
+                </td>
+            </tr>
+
+       </table>
+    </form>
+       <br>
+       <hr>
+
+    <h1>Selectors</h1>
+    <ul>
+        <li>tag selector</li>
+        <li>tag selector</li>
+        <li>tag selector</li>
+        <li>tag selector</li>
+        <li class="cs">class selector</li>
+        <li class="cs">class selector</li>
+
+        <li id="id">Id selector</li>
+    </ul>
+    
+   </body>
+
+
+</html>
